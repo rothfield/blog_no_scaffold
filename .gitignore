@@ -24,11 +24,15 @@
 
 
 /public/assets
+# don't ignore tailwind generated css
+!/app/assets/builds/tailwind.css
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
 /app/assets/builds/*
+# don't ignore tailwind generated css
+!/app/assets/builds/tailwind.css
 !/app/assets/builds/.keep
 /vendor/bundle/
 
