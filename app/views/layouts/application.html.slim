@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title
+      | BlogNoScaffold
+    meta[name="viewport" content="width=device-width,initial-scale=1"]
+    = csrf_meta_tags
+    = csp_meta_tag
+    = javascript_importmap_tags
+    = stylesheet_link_tag "application"
+    = javascript_tag "https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"
+    link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+    script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"
+    script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"
+    = stylesheet_link_tag "simple"
+    = stylesheet_link_tag "https://cdn.datatables.net/autofill/2.3.9/css/autoFill.dataTables.min.css"
+    = stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" if false
+  body
+    = yield

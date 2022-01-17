@@ -1,0 +1,7 @@
+= turbo_frame_tag "new_post_frame", src: new_post_path do
+      div.text-lg.bg-red-300[data-controller="hello"]
+        input.bg-blue-200[type="text" name="Click me"]
+        button[data-action="click->hello#greet"]
+          | Click me!!!
+        | This will be new_post_frame 
+= turbo_frame_tag "posts_frame", src: posts_path 

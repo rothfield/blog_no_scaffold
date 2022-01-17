@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlogNoScaffold</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+  <%= javascript_importmap_tags %>
+
+  <%= stylesheet_link_tag "application" %>
+  </head>
+
+  <body>
+    <%= turbo_frame_tag "hello" do %>
+      <div data-controller="hello">
+  <input type="text">
+  <button data-action="click->hello#greet">Greet</button>
+</div>
+      BYE
+    <% end %>
+    <%= yield %>
+  </body>
+</html>

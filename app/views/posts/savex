@@ -1,0 +1,11 @@
+= turbo_frame_tag "posts_frame" do
+  - render partial: "table"
+  div.grid.grid-cols-2
+    div Title
+    div ID
+    - @posts.each do |post|
+      div
+        = post.title
+      div
+        = post.id
+  

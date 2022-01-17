@@ -1,0 +1,16 @@
+javascript:
+  x=document.getElementsByTagName('table');  table = new DataTable(x)
+hr
+table.table-auto
+  thead
+    tr
+      th Title
+      th ID
+  tbody
+    - @posts.each do |post|
+      tr
+        td
+          = post.title + "                   sss"
+        td
+          = post.id
+  
