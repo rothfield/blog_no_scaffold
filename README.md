@@ -20,5 +20,11 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+In dev:
+
+bundle
+rails db:seed
+rails tailwindcss:watch
+bin/rails server -b 0.0.0.0
 
 * ...
